@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Tique">
+    <title>Mine Sweeper</title>
+    <link href="MineSweeper.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>MineSweeper</h1>
+    <hr>
+    <form id="form">
+        <label for="widthInput">Width</label>
+        <input type="text" id="widthInput">
+        <label for="heightInput">Height</label>
+        <input type="text" id="heightInput">
+        <label for="minesInput">Mines</label>
+        <input type="text" id="minesInput">
+        <input type="button" value="Set Values" id="submit">
+        <input type="button" value="Reset Board" id="reset">
+    </form>
+    <div id="gameBoxBox">
+        <div id="gameBox">
+            <div id="game"></div>
+        </div>
+        <div id="status">Flagged: 0/20</div>
+    </div>
+    <script src="MineSweeper.js"></script>
+</body>
+</html>

@@ -135,6 +135,7 @@ main {
     background-color: var(--altBackground);
     text-align: center;
     padding: 10px;
+    margin: 10px;
 }
 
 figure {

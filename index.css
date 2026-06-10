@@ -3,12 +3,12 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr;
     grid-template-areas: 
-    'guy tagFlex'
-    'guy missionFlex';
+    'picture tagFlex'
+    'picture missionFlex';
 }
 
-#guy {
-    grid-area: guy;
+#picture {
+    grid-area: picture;
     margin-left: 30%;
 }
 
@@ -22,8 +22,8 @@ main {
 
 #tagline {
     padding: 30px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 #missionFlex {

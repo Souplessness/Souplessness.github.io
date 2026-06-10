@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Rocked Paper Scissors</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="background" class="backNoneMod">
+            <header></header>
+            <main>
+                <div id="content">
+                    <h2 id="modifiersTag" class="boxNoneMod">Modifiers</h2>
+                    <div id="modifierButtons" class="boxNoneMod">
+                        <button id="noneMod" class="modifierButton" onclick="setModifier('none')">None</button>
+                        <button id="valueMod" class="modifierButton" onclick="setModifier('value')">Value</button>
+                        <!-- <button id="mergeMod" class="modifierButton" onclick="setModifier('merge')">Merge</button> -->
+                        <button id="upgradeMod" class="modifierButton" onclick="setModifier('upgrade')">Upgrade</button>
+                    </div>
+                    <h2 id="optionsTag" class="boxNoneMod">Options</h2>
+                    <div id="optionButtons" class="boxNoneMod">
+                        <button id="rock" class="optionButton" onclick="getUserChoice('rock')">🗿</button>
+                        <button id="paper" class="optionButton" onclick="getUserChoice('paper')">📃</button>
+                        <button id="scissors" class="optionButton" onclick="getUserChoice('scissors')">✂</button>
+                        <button id="bomb" class="optionButton" onclick="getUserChoice('bomb')">💣</button>
+                        <button id="water" class="optionButton" onclick="getUserChoice('water')">💧</button>
+                        <button id="paper towel" class="optionButton" onclick="getUserChoice('paper towel')">🧻</button>
+                        <button id="man" class="optionButton" onclick="getUserChoice('man')">🚶‍♂️</button>
+                        <button id="random number" class="optionButton" onclick="getUserChoice('random number')">🔢</button>
+                        <button id="wind" class="optionButton" onclick="getUserChoice('wind')">💨</button>
+                        <button id="shoot" class="optionButton" onclick="getUserChoice('shoot')">👉</button>
+                        <button id="gun" class="optionButton" onclick="getUserChoice('gun')">🔫</button>
+                        <button id="date" class="optionButton" onclick="getUserChoice('date')">🕘</button>
+                    </div>
+                    <h2 id="textTag" class="boxNoneMod">Info</h2>
+                    <div id="text" class="boxNoneMod">
+                        <p id="userChoice">Player: None</p>
+                        <p id="computerChoice">Computer: None</p>
+                        <p id="modifier">Modifier: None</p>
+                        <p id="playerScore">Player Score: 0</p>
+                        <p id="computerScore">Computer Score: 0</p>
+                        <p id="winner">Click the SHOOT button to play!</p>
+                        <button id="playButton" onclick="modifierCheck(userChoice);">SHOOT</button>
+                    </div>
+                </div>
+                <div id="tooltip">
+                    <div id="tooltipGrid">
+                        <p id="buttonName"></p>
+                        <p id="buttonValue"></p>
+                        <p id="buttonInfo"></p>
+                        <p id="buttonBeats"></p>
+                        <p id="buttonTiesWith"></p>
+                    </div>
+                </div>
+                <p id="dateCorner" class="boxNoneMod"></p>
+                <a href="index.html" id="homeButton" class="boxNoneMod">Home</a>
+            </main>
+            <footer></footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

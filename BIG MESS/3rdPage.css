@@ -1,0 +1,34 @@
+#backArrow {
+    left: 0;
+    aspect-ratio: 1;
+}
+
+#playButton {
+    right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#description li {
+    list-style: none;
+    padding: 5px;
+    margin-left: -18px;
+}
+
+#howToPlay li {
+    list-style: none;
+    padding: 5px;
+    margin-left: -18px;
+}
+
+#resources li {
+    list-style: none;
+    padding: 5px;
+    margin-left: -18px;
+}
+
+#theProcess li {
+    list-style: none;
+    padding: 5px;
+    margin-left: -18px;
+}

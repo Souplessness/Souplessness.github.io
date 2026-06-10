@@ -1,0 +1,67 @@
+:root {
+    --backgroundColor: #efe2ff;
+    --mainColor: #dabcff;
+    --brightAlt: #bb87fd;
+    --darkAlt: #452f60;
+    --bigTextFont: Helvetica, Arial;
+    --smallTextFont: Arsenal, Arial;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--smallTextFont);
+    background-color: var(--backgroundColor);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.navButton {
+    border-radius: 50px;
+    background-color: var(--darkAlt);
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    height: 60px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    margin: 35px;
+    text-align: center;
+    line-height: 60px;
+    font-family: Helvetica, Arial;
+}
+
+#backArrow {
+    left: 0;
+    aspect-ratio: 1;
+}
+
+#thirdPageButton {
+    right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#gameDisplay {
+    background-color: var(--mainColor);
+    width: 75vw;
+    height: 75vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .navButton {
+        border-radius: 50px;
+        font-size: 20px;
+        height: 30px;
+        margin: 10px;
+        line-height: 30px;
+    }
+}

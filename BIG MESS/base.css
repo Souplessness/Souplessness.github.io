@@ -1,0 +1,109 @@
+:root {
+    --backgroundColor: #efe2ff;
+    --mainColor: #dabcff;
+    --brightAlt: #bb87fd;
+    --darkAlt: #452f60;
+    --bigTextFont: Helvetica, Arial;
+    --smallTextFont: Arsenal, Arial;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--smallTextFont);
+    background-color: var(--backgroundColor);
+}
+
+header {
+    background-color: var(--brightAlt);
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    font-family: var(--bigTextFont);
+}
+
+.navButton {
+    border-radius: 50px;
+    background-color: var(--darkAlt);
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    height: 60px;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    margin: 35px;
+    text-align: center;
+    line-height: 60px;
+    font-family: var(--bigTextFont);
+}
+
+h1 {
+    font-size: 45px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    background-color: var(--mainColor);
+    width: 40%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: var(--bigTextFont);
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+li {
+    font-size: 18px;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+footer {
+    background-color: var(--darkAlt);
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    color: white;
+    position: sticky;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 10vh;
+        line-height: 10vh;
+        position: sticky;
+        top: 0;
+    }
+
+    h1 {
+        margin: 0px;
+    }
+    
+    .navButton {
+        border-radius: 50px;
+        font-size: 20px;
+        height: 30px;
+        margin: 10px;
+        line-height: 30px;
+    }
+    
+    div {
+        width: 80vw;
+    }
+}

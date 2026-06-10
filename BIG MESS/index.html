@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Big Mess</title>
+        <link rel="icon" type="image/x-icon" href="assets/circleWithTriangle.png">
+        <link href="base.css" rel="stylesheet" type="text/css"/>
+        <link href="home.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/377e2797db.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Big Mess</h1>
+        </header>
+        <main>
+            <div id="description">
+                <h2>Decsription</h2>
+                <ul>
+                    <li><p>Big Mess is a factory game inspired by Satisfactory. I would also say it was inspired by some actual top-down factory building games, but I haven't played any. Except shapez.</p></li>
+                </ul> 
+            </div>
+            <div id="play">
+                <a id="playButton" href="game.html">Play</a>
+                <a id="thirdPageButton" href="3rdPage.html">3rd Page</a>
+            </div>
+            <div id="comingSoon">
+                <h2>Coming Soon</h2>
+                <ul>
+                    <li>Crafting...</li>
+                    <li>Structures</li>
+                    <li>Building</li>
+                    <li>Mining</li>
+                    <li>Structure Interactivity</li>
+                    <li>And More!</li>
+                </ul>
+            </div>
+            <div id="changelog">
+                <h2>Changelog</h2>
+                <button id="dropDown" onclick="changelogToggle()"><i class="fa-solid fa-arrow-left"></i></button>
+                <ul id="latestChange">
+                    <h3 id="v0.6">v0.6</h3>
+                    <h4><i>"How the heck am I supposed to craft if I can't get any items?"</i> Oh yeah I forgot about that part.</h4>
+                    <li class="gameChange">Added crafting</li>
+
+                    <hr>
+                </ul>
+                <ul id="oldChanges" class="clHidden">
+                    <h3 id="v0.5">v0.5</h3>
+                    <h4>Ok, <i>next time</i> we'll have crafting</h4>
+                    <li class="gameChange">Almost finished adding crafting</li>
+                    <li class="gameChange">Added item amount text to cursor item slot</li>
+                    <li class="gameChange">Fixed item max stack logic</li>
+                    <li class="gameChange">Added full inventory warning</li>
+
+                    <hr>
+
+                    <h3 id="v0.4.1">v0.4.1</h3>
+                    <h4>No, actually some site changes are next. Project requirements and all that...</h4>
+                    <li class="siteChange">Added actual content to the 3rd Page</li>
+                    <li class="siteChange">Added more navigation buttons</li>
+                    <li class="siteChange">Added styling for mobile (not game support)</li>
+
+                    <hr>
+
+                    <h3 id="v0.4">v0.4</h3>
+                    <h4>An inventory? What's next, crafting?</h4>
+                    <li class="gameChange">Added inventory system (yes, really)</li>
+                    <li class="gameChange">Reduced world size for optimization</li>
+                    <li class="gameChange">Fixed world and camera border</li>
+                    <li class="gameChange">Fixed UI being jittery</li>
+
+                    <hr>
+
+                    <h3 id="v0.3.2">v0.3.2</h3>
+                    <h4>I have horrible time management skills B)</h4>
+                    <li class="gameChange">Finished setting up grid</li>
+                    <li class="gameChange">Halved size of grid spaces and player</li>
+                    <li class="gameChange">Added boundaries for player and camera</li>
+                    <li class="gameChange">Changed player sprite</li>
+
+                    <hr>
+
+                    <h3 id="v0.3.1">v0.3.1</h3>
+                    <h4>I wish we would stop having 20-30 minute discussions so I could do more work during class...</h4>
+                    <li class="gameChange">Removed old grid</li>
+                    <li class="gameChange">Began adding a new grid via a class system, allowing all grid spaces to be their own thing</li>
+
+                    <hr>
+
+                    <h3 id="v0.3">v0.3</h3>
+                    <h4>Time to <i>really</i> start making the game</h4>
+                    <li class="gameChange">Added position text and made it move with the camera</li>
+                    <li class="gameChange">Added grid along the ground (it's kinda wonky, but it <i>is</i> a grid)</li>
+
+                    <hr>
+
+                    <h3 id="v0.2.4">v0.2.4</h3>
+                    <h4>I'm gonna have to work on this at home, won't I...?</h4>
+                    <li class="gameChange">Added player rotation based on cursor</li>
+                    <li class="siteChange">Finished setting up dropdown for changelog</li>
+                    <li class="siteChange">Added tooltips and colors to changelog for organization</li>
+
+                    <hr>
+
+                    <h3 id="v0.2.3">v0.2.3</h3>
+                    <h4>I feel like I'm actually making progress now! Hooray!</h4>
+                    <li class="gameChange">Fixed movement</li>
+                    <li class="siteChange">Started setting up dropdown for changelog</li>
+
+                    <hr>
+
+                    <h3 id="v0.2.2">v0.2.2</h3>
+                    <h4>The actual beginning, for real this time</h4>
+                    <li class="gameChange">Added test player sprite</li>
+                    <li class="gameChange">Added movement</li>
+
+                    <hr>
+
+                    <h3 id="v0.2.1">v0.2.1</h3>
+                    <h4>The actual beginning</h4>
+                    <li class="gameChange">Changed Phaser version to the latest one instead of a super old one</li>
+                    <li class="gameChange">Struggled to get Phaser to actually draw anything other than a white circle</li>
+
+                    <hr>
+
+                    <h3 id="v0.2">v0.2</h3>
+                    <h4>The beginning</h4>
+                    <li class="gameChange">Added Phaser</li>
+                    <li>...Is it working?</li>
+                    <li>I can't tell if it's working...</li>
+
+                    <hr>
+
+                    <h3 id="v0.1">v0.1</h3>
+                    <h4>"Welcome back, Dr. Phaser."</h4>
+                    <li>What the heck is a Phaser?</li>
+                    <li>Addendum: I now know what Phaser is</li>
+                </ul>
+            </div>
+        </main>
+        <footer>Tique</footer>
+        <script src="script.js"></script>
+    </body>
+</html>

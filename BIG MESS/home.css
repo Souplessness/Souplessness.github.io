@@ -1,0 +1,132 @@
+#description li {
+    list-style: none;
+    margin-left: -18px;
+}
+
+#play {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    text-align: center;
+}
+
+#play a {
+    border: var(--darkAlt) 1px solid;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+}
+
+#playButton {
+    padding: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: var(--brightAlt);
+    color: black;
+}
+
+#thirdPageButton {
+    padding: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: var(--darkAlt);
+    color: #f5f5f5;
+}
+
+#changelog h2 {
+    display: inline-block;
+}
+
+#dropDown {
+    rotate: 270deg;
+    float: right;
+    margin: 10px;
+    margin-bottom: 0px;
+    border-radius: 100%;
+    border: none;
+    background-color: #634588;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    position: sticky;
+    top: 2vh;
+}
+
+#dropDown:hover {
+    background-color: var(--darkAlt);
+}
+
+#oldChanges, #changelog {
+    transition: 0.3s;
+}
+
+.clHidden {
+    opacity: 0%;
+    user-select: none;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.clVisible {
+    max-height: 3000px;
+}
+
+#changelog h3 {
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -18px;
+}
+
+#changelog h4 {
+    font-size: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: -18px;
+}
+
+.gameChange::marker {
+    color: #ff5d5d;
+}
+
+.siteChange::marker {
+    color: #6f6fff;
+}
+
+.clTooltip {
+    position: relative;
+}
+  
+.clTooltipText {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--brightAlt);
+    text-align: center;
+    border-radius: 6px;
+    border: var(--darkAlt) 1px solid;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+  
+.clTooltip:hover .clTooltipText {
+    visibility: visible;
+}
+/* I basically took this tooltip stuff straight from W3Schools */
+
+hr {
+    border-bottom: 0px;
+    margin: 10px;
+    margin-left: -38px;
+    border-color: var(--darkAlt);
+}
